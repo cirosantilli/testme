@@ -19,14 +19,12 @@ module Gitlab
     end
 
     def archive_formats_regex
-      #|zip|tar|    tar.gz    |         tar.bz2         |
-      /(zip|tar|tar\.gz|tgz|gz|tar\.bz2|tbz|tbz2|tb2|bz2)/
+      /(zip|tar|7z|tar\.gz|tgz|gz|tar\.bz2|tbz|tbz2|tb2|bz2)/
     end
 
     def git_reference_regex
       # Valid git ref regex, see:
       # https://www.kernel.org/pub/software/scm/git/docs/git-check-ref-format.html
-
       %r{
         (?!
            (?# doesn't begins with)

@@ -1,3 +1,9 @@
 [submodule "six"]
 	path = six
 	url = git://github.com/randx/six.git
+[submodule "gitlab-shell"]
+	path = gitlab-shell
+	url = https://github.com/gitlabhq/gitlab-shell.git
+[submodule "gitlab-grack"]
+	path = gitlab-grack
+	url = https://gitlab.com/gitlab-org/gitlab-grack.git
